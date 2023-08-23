@@ -14,7 +14,23 @@ const SongCard = ({ song, i }) => {
     bg-opacity-80 backdrop-blur-sm animate-slideup rounded-lg cursor-pointer'>
       <div className='relative w-full h-56 group'>
         <div className={`absolute inset-0 justify-center items-center bg-black bg-opacity-50 group-hover:flex ${activeSong?.title === song.title ? 'flex bg-black bg-opacity-70' : 'hidden'}
-        `} />
+        `} >
+          <PlayPause />
+        </div>
+        <img alt='song_img' src={song.images?.coverart} />
+      </div>
+        <div className='mt-4 flex flex-col'>
+          <p>
+            <Link>
+              {song.title}
+            </Link>
+          </p>
+          <p>
+            <Link>
+              {song.subtitle}
+            </Link>
+          </p>
+        
       </div>
     </div>
   );
