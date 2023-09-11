@@ -14,6 +14,9 @@ const SongDetails = () => {
     const { data: songData, isFetching: isFetchingSongDetails } = useGetSongDetailsQuery({ songid });
     const { data, isFetching: isFetchingRelatedSongs, error } = useGetSongRelatedQuery({ songid });
 
+    console.log(songData);
+    
+    if (error) return <Error />;
 
     const handlePauseClick = () => {
       dispatch(playPause(false));
@@ -58,11 +61,8 @@ const SongDetails = () => {
             handlePauseClick={handlePauseClick}
             handlePlayClick={handlePlayClick}
         />
-  
       </div>
     );
-
 };
-
 
 export default SongDetails;
