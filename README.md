@@ -1,3 +1,8 @@
+<img src="https://github.com/emilianstoyanov/Project-Music-Player/assets/68276889/ce0485ad-ca60-4015-9533-d0fd58c56557" width=70% height=50%>
+<img src="https://github.com/emilianstoyanov/Project-Music-Player/assets/68276889/dde9a167-b815-4e2e-9dbd-f53ee929ce3c" width=70% height=50%>
+
+
+
 # Project Lyrics
 
 Develop an elegant React.js Music Application. 
